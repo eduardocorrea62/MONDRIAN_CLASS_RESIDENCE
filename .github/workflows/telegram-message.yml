@@ -14,10 +14,10 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: |
-          MESSAGE="👋 Bem-vindo ao Suporte Técnico - MONDRIAN CLASS RESIDENCE!"
+          MESSAGE="👋 Bem-vindo ao sistema de alertas da AquaMonitor. Agradecemos a preferência."
           
           # IDs dos usuários
-          CHAT_IDS=("207223980" )  # <-- Substituir pelos IDs reais
+          CHAT_IDS=("207223980" "975571557" "7893666837")  # <-- Substituir pelos IDs reais
 
           for CHAT_ID in "${CHAT_IDS[@]}"
           do
