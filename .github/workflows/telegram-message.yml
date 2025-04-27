@@ -16,10 +16,10 @@ jobs:
         run: |
           set -e  # Para parar o workflow se qualquer comando falhar
 
-          MESSAGE="👋 Bem-vindo ao sistema de alertas da AquaMonitor. Agradecemos a sua preferência."
+          MESSAGE="👋 SUPORTE TÉCNICO: Hoje haverá manutenção do sistema."
           
           # IDs dos usuários
-          CHAT_IDS=("207223980" "975571557" "7893666837")  # <-- Substituir pelos IDs reais
+          CHAT_IDS=("207223980")  # <-- Substituir pelos IDs reais
           
           for CHAT_ID in "${CHAT_IDS[@]}"; do
             echo "Enviando mensagem para o chat_id $CHAT_ID"
