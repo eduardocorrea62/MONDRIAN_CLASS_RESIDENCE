@@ -1,10 +1,7 @@
 name: Notificar Telegram
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_dispatch:  # <-- agora só manualmente!
 
 jobs:
   send_message:
@@ -16,7 +13,7 @@ jobs:
         run: |
           set -e  # Para parar o workflow se qualquer comando falhar
 
-          MESSAGE="👋 SUPORTE TÉCNICO: Hoje haverá manutenção do sistema."
+          MESSAGE="👋 SUPORTE TÉCNICO: Amanhã haverá manutenção do sistema."
           
           # IDs dos usuários
           CHAT_IDS=("207223980")  # <-- Substituir pelos IDs reais
